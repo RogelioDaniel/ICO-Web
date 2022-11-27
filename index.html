@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/icono.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+        
+        <script src="assets/js/preloader.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.js"></script>
+        <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="assets/js/ImageThree.js"></script>
+        <title>ICO UAEM Zumpango</title>
+    </head>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <body>
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <img src="assets/img/icono2.png"  alt="" width="70" height="70"> 
+                
+                
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Sobre nosotros</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Descubre más</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Espacios académicos</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Modo obscuro</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/background.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div id="container">
+                        <canvas id="stars"></canvas>
+                        <canvas id="yahia"></canvas>
+                        <div id="overlay"></div>
+                    </div>
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Ingeniería en computación</span>
+                       
+                            <h1 class="home__data-title">Explora lo que <br> <b> ICO </b>tiene <br> para ti</h1>
+                        
+                  
+                        <a href="#about" class="button">Ver más...</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/profile.php?id=100057621242608" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+   
+                    </div>
+
+                    
+                    
+        
+                     <div class="home__info">
+                        <div>
+                            <span class="home__info-title">Revisa las convocatorias</span>
+                            <a href="https://www.uaemex.mx/mi-universidad/avisos,eventos-y-convocatorias" class="button button--flex button--link home__info-button">
+                                Más información <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="home__info-overlay">
+                            <img src="assets/img/convocatorias.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            
+
+
+            
+
+            <!--==================== ABOUT ====================-->
+            
+           
+            <section class="about section" id="about">
+                <div class='light x1'></div>
+                <div class='light x2'></div>
+                <div class='light x3'></div>
+                <div class='light x4'></div>
+                <div class='light x5'></div>
+                <div class='light x6'></div>
+                <div class='light x7'></div>
+                <div class='light x8'></div>
+                <div class='light x9'></div>
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Conoce a fondo la Ingeniería en Computación </h2>
+                        <p class="about__description">El Ingeniero en Computación es un profesional dedicado a interactuar
+                             con todo lo relacionado con la informática, el desarrollo de software y la 
+                             tecnología computacional en general.
+                        </p>
+                        <a href="#" class="button">Ver más...</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/EdificioA.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/Alumno.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+         
+
+                    </div>
+                </div>
+               
+            </section>
+        </canvas>
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Conoce nuestras demas actividades</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="http://drive.google.com/uc?export=view&id=1wYCj71Ux3P6IFdyl-7ZEuM3UpR6RkIbg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Equipos de Futbol</h2>
+                                <span class="discover__description">Torneos, juego libre</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="http://drive.google.com/uc?export=view&id=1c807JAjDW7nXXA5P7GQX84HMZ0z1THWN" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Concursos</h2>
+                                <span class="discover__description">Día de muertos</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="http://drive.google.com/uc?export=view&id=14tCeMeI4LI0kQSV1KVrgWf0QWjIfvF-N" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Convivencias</h2>
+                                <span class="discover__description">Platicas con egresados</span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">Con más de 30 años <br> ICO se mantiene al margen con la Tecnología</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">10</h2>
+                            <span class="experience__description">Semestre <br> de duración</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">9</h2>
+                            <span class="experience__description">Opciones <br> de titulación</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">Modalidad</h2>
+                            <span class="experience__description"><br>Presencial</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/UAEM-ICO.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/ICO-Logo.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Competencia Universitaria Ofrendas del dia de muertos 2022
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="http://drive.google.com/uc?export=view&id=1v2kEg8svJbbtzpKgBF767CzivVTFCiWD" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Descubre más</h3>
+                        <p class="footer__description">Visita nuestras redes sociales <!-- <br> destination, 
+                            we offer you the <br> experience. -->
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Sobre nosotros</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Plan de estudios</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Mapa curricular</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Profesores</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Alumnos</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Horarios</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Moodle</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Control escolar</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Contáctanos</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Correo</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Centro de ayuda</a>
+                            </li>
+<!--                             <li class="footer__item">
+                                <a href="" class="footer__link">ChatBot</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <!-- <canvas id="canvas"></canvas> -->
+                    <p class="footer__copy">&#169; 2022 ICO.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Acuerdos</a>
+                        <a href="#" class="footer__terms-link">Privacidad</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <!--=============== BACKGROUND JS ===============-->
+        <script src="assets/js/background.js"></script>
+
+        
+    </body>
+</html>
