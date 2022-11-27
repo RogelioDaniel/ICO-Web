@@ -696,18 +696,6 @@ outline: none;
 
 .about__container {
   row-gap: 2.5rem;
-  background-color: rgba(255, 255, 255, .15);  
-  backdrop-filter: blur(5px);
-  padding: 2rem;
-  width: 300rem;
-  height: 25rem;
-
-  background-color: rgba(255, 255, 255, .15);  
-  backdrop-filter: blur(5px);
-  padding: 2rem;
-  width: 300rem;
-  height: 25rem;
-
 }
 
 .about__description {
@@ -749,9 +737,13 @@ outline: none;
   position: relative;
   width: 200px;
   overflow: var(--img-hidden);
-  color: var(--white-color);
+ 
 }
-
+.discover__data {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
 .discover__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-25);
@@ -1286,6 +1278,7 @@ outline: none;
   .discover__data {
     left: 1.5rem;
     bottom: 2rem;
+    
   }
   .discover__title {
     font-size: var(--h2-font-size);
